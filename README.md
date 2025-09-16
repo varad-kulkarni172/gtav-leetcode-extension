@@ -5,8 +5,6 @@ Show a "SUBMISSION WASTED" overlay and short jingle when LeetCode submissions fa
 ## Quick start (local testing)
 1. Put your assets in `assets/`:
    - `assets/wasted.png` (SVG or PNG)
-   - `assets/wasted.mp3` (short, royalty-free or original)
-   - `assets/icon48.png` and `assets/icon128.png`
 
 2. Load extension:
    - Open Chrome -> `chrome://extensions`
@@ -24,8 +22,3 @@ Show a "SUBMISSION WASTED" overlay and short jingle when LeetCode submissions fa
 ## Notes
 - **Do not** include Rockstar/GTA protected assets if you intend to publish publicly. Use spoofed artwork or original audio.
 - `manifest.json` uses `web_accessible_resources` so injected DOM elements can load the extension's assets.
-
-## Publishing
-- Zip the folder (exclude `.git/`) and upload to Chrome Web Store Developer Dashboard.
-- Include license/credits for any third-party assets.
-
