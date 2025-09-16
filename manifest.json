@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode GTA: WASTED",
+  "version": "1.0.0",
+  "description": "Show a 'WASTED' overlay and play a jingle when LeetCode submissions fail. Use your own spoof assets for public publishing.",
+  "permissions": ["storage"],
+  "host_permissions": ["*://leetcode.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/*"],
+      "js": ["content_script.js"],
+      "css": ["wasted.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["*://leetcode.com/*"]
+    }
+  ],
+  "action": {
+    "default_title": "LeetCode GTA WASTED"
+  }
+}
